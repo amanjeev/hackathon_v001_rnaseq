@@ -4,3 +4,5 @@
 .pydevproject
 *.sublime-project
 *.sublime-workspace
+#.*
+.idea
