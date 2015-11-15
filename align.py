@@ -215,14 +215,14 @@ if __name__ == '__main__':
         os.makedirs(args.out)
     except OSError:
         # Already exists?
-        print >>sys.stderr, ('warning: could not create output directory; '
+        print >> sys.stderr, ('warning: could not create output directory; '
                              'it may already exist')
     if args.temp is not None:
         try:
             os.makedirs(args.temp)
         except OSError:
             # Already exists?
-            print >>sys.stderr, ('warning: could not create temporary '
+            print >> sys.stderr, ('warning: could not create temporary '
                                  'directory; it may already exist')
         else:
             atexit.register(shutil.rmtree, args.temp, ignore_errors=True)
